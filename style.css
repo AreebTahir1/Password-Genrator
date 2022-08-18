@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.788);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pw-container{
+    margin-top: 20vh;
+    padding: 20px;
+ width: 450px;
+ background-color: rgba(0, 0, 0, 0.267);
+ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.788);
+}
+.pw-header{
+    padding:1rem;
+}
+.pw{
+    width: 100%;
+    height: 70px;
+    background-color:rgba(183, 0, 255, 0.233);
+    color: wheat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+.pw button{
+    position:absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 50%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+    padding: 0.25 rem 1 rem;
+    background-color: rgba(0, 0, 0, 0.788) ;
+    color:rgba(245, 245, 245, 0.938);
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+.pw:hover button{
+    opacity: 1;
+    transform: translate(0, -80%);
+}
+.pw-body{
+    padding: 0rem 1rem 1rem;
+
+}
+.form-control{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+.generate{
+    display: block;
+    background-color: rgba(183, 0, 255, 0.233);
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+}
